@@ -12,6 +12,12 @@ namespace IEnumerableTest
                 collection.Add(new Document(false));
             }
             collection.OutAll();
+
+
+            foreach(var d in collection)
+            {
+
+            }
         }
     }
 }
