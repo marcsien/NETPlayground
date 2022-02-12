@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ms\\Desktop\\NETPlayground\\IEnumerableImplementation\\IEnumerable\\IEnumerable.csproj",
-      "projectName": "IEnumerable",
-      "projectPath": "C:\\Users\\ms\\Desktop\\NETPlayground\\IEnumerableImplementation\\IEnumerable\\IEnumerable.csproj",
+      "projectUniqueName": "C:\\Users\\ms\\Desktop\\NETPlayground\\IEnumerableImplementation\\IEnumerable\\IEnumerableTest.csproj",
+      "projectName": "IEnumerableTest",
+      "projectPath": "C:\\Users\\ms\\Desktop\\NETPlayground\\IEnumerableImplementation\\IEnumerable\\IEnumerableTest.csproj",
       "packagesPath": "C:\\Users\\ms\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ms\\Desktop\\NETPlayground\\IEnumerableImplementation\\IEnumerable\\obj\\",
       "projectStyle": "PackageReference",
