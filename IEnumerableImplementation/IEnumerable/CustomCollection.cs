@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,27 +7,33 @@ using System.Threading.Tasks;
 
 namespace IEnumerableTest
 {
-    public class CustomCollection
+    public class CustomCollection<T> : IEnumerable<T>
     {
-        List<Document> lista = new List<Document>();
+        List<T> lista = new List<T>();
 
         public CustomCollection()
         {
 
         }
 
-        public void Add(Document d)
+        public void Add(T d)
         {
             lista.Add(d);
         }
 
-        public void OutAll()
+        public IEnumerator<T> GetEnumerator()
         {
-            foreach(var l in lista)
-            {
-                Console.WriteLine(l.Name + " " + l.Number.ToString() + " " + l.AddedTime.ToString());
-            }
+            return new CustomCollectionEnumerator<T>(this);
         }
 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        public T[] GetAll()
+        {
+            return lista.ToArray<T>();
+        }
     }
 }

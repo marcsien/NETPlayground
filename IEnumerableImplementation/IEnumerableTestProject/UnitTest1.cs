@@ -17,7 +17,7 @@ namespace IEnumerableTestProject
         [TestMethod]
         public void CustomCollectionImplementsIEnumerable()
         {
-            CustomCollection collection = new CustomCollection();
+            CustomCollection<Document> collection = new CustomCollection<Document>();
             Assert.IsTrue(collection is IEnumerable<Document>);
         }
     }
