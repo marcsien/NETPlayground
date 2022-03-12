@@ -1,0 +1,16 @@
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.exe
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.deps.json
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.runtimeconfig.json
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.runtimeconfig.dev.json
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.dll
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\ref\Yeald1.dll
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\bin\Debug\net5.0\Yeald1.pdb
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.csproj.AssemblyReference.cache
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.AssemblyInfoInputs.cache
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.AssemblyInfo.cs
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.csproj.CoreCompileInputs.cache
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.dll
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\ref\Yeald1.dll
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.pdb
+C:\Users\ms\Desktop\NETPlayground\YealdTests\Yeald1\obj\Debug\net5.0\Yeald1.genruntimeconfig.cache
