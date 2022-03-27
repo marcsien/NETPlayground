@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace FibonacciTester
 {
+    public class FibonacciGeneratorEventArg : EventArgs
+    {
+        public FibonacciGenerator fibonacciGenerator { get; set; }
+    }
     public class FibonacciGenerator : IFibonacciGenerator
     {
+        public event EventHandler<FibonacciGeneratorEventArg> FibonacciCalculated;
+
         public int Nth { get; set; }
 
         private int nthvalue = default;
@@ -26,6 +32,15 @@ namespace FibonacciTester
         public void Calculate()
         {
             nthvalue = fib(Nth);
+            onFibonacciCalculated();
+        }
+        
+        protected virtual void onFibonacciCalculated()
+        {
+            if (FibonacciCalculated != null)
+            {
+                FibonacciCalculated(this, new FibonacciGeneratorEventArg() { fibonacciGenerator = this });
+            }
         }
     }
 }

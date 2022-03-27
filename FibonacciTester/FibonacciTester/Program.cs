@@ -3,11 +3,19 @@ using System.Threading;
 
 namespace FibonacciTester
 {
+    public class FibonacciCalculatedNotifier
+    {
+        public void onFibonacciCalculated(object source, FibonacciGeneratorEventArg arg)
+        {
+            Console.WriteLine($"Calculating with {arg.fibonacciGenerator.Name} algorithm completed.");
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
             FibonacciTimer<FibonacciGenerator> timer = new FibonacciTimer<FibonacciGenerator>(30);
+            FibonacciCalculatedNotifier notifier = new FibonacciCalculatedNotifier();
 
             FibonacciGenerator f1 = new FibonacciGenerator("IterationAsLambda", (n) => {
                 int a = 0, b = 1, t = 1;
@@ -30,13 +38,19 @@ namespace FibonacciTester
             FibonacciGenerator f4 = new FibonacciGenerator("IterationAsProgramClassMethod", n => Program.FibIteration(n));
             timer.AddNew(f4);
 
-            FibonacciGenerator f5 = new FibonacciGenerator("RecursiveAsLambda", (n) => {
+            FibonacciGenerator f5 = new FibonacciGenerator("Recursive AsLambda", (n) => {
                 Func<int, int> fact = null;
                 fact = x => (x <= 1) ? x : fact(x - 2) + fact(x - 1);
                 return fact(n);
             });
             timer.AddNew(f5);
 
+
+            f1.FibonacciCalculated += notifier.onFibonacciCalculated;
+            f2.FibonacciCalculated += notifier.onFibonacciCalculated;
+            f3.FibonacciCalculated += notifier.onFibonacciCalculated;
+            f4.FibonacciCalculated += notifier.onFibonacciCalculated;
+            f5.FibonacciCalculated += notifier.onFibonacciCalculated;
 
             timer.Run();
             timer.DisplayResults();
