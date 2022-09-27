@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeBridgeExample", "ShapeBridgeExample\ShapeBridgeExample.csproj", "{22DFB9F2-B505-4D82-8EA0-D74649A5DAA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22DFB9F2-B505-4D82-8EA0-D74649A5DAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22DFB9F2-B505-4D82-8EA0-D74649A5DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22DFB9F2-B505-4D82-8EA0-D74649A5DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22DFB9F2-B505-4D82-8EA0-D74649A5DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52F4EE84-8192-45DB-B138-6CD3BE86F8F5}
+	EndGlobalSection
+EndGlobal
